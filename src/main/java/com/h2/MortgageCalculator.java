@@ -3,7 +3,6 @@ package com.h2;
 import java.text.DecimalFormat;
 
 public class MortgageCalculator {
-    private final int MONTHS_IN_A_YEAR = 12;
     private long loanAmount;
     private int termInYears;
     private float annualRate;
@@ -58,14 +57,14 @@ public class MortgageCalculator {
     //calculate the number of payments necessary for the mortgage
     private int getNumberOfPayments()
     {
-        return (termInYears*MONTHS_IN_A_YEAR);
+        return (termInYears*12);
     }
 
     //calculate the monthly interest rate using the annual rate
     private float getMonthlyInterestRate()
     {
         float interestRate = annualRate/100;
-        interestRate /= MONTHS_IN_A_YEAR;
+        interestRate /= 12;
         return interestRate;
     }
 }
