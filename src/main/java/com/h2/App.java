@@ -18,7 +18,7 @@ public class App
 
     //a simple method that takes a list of numbers and
     //returns the sum of all of the numbers in the list
-    public static int add(int[] numbers)
+    private static int add(int[] numbers)
     {
         int sum = 0;
         int length = numbers.length;
