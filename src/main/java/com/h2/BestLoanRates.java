@@ -30,7 +30,7 @@ public class BestLoanRates
         //report this to the user
         if (bestRate==0.0f)
         {
-            System.out.println("No available rates for the term: " +
+            System.out.println("No available rates for term: " +
                     loanTermInYears + " years");
         }
         //otherwise, report the best rate
