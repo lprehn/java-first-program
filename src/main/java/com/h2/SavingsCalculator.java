@@ -29,13 +29,13 @@ public class SavingsCalculator
         {
             //transform each string in the list of credits into a float
             //and add the value to the list of floats
-            credits[i] = Float.parseFloat(creditsAsString[i]);
+            credits[i] = Utilities.getFloatValue(creditsAsString[i]);
         }
 
         for(int i=0;i<debitsAsString.length;i++)
         {
             //do the same with the list of debits
-            debits[i] = Float.parseFloat(debitsAsString[i]);
+            debits[i] = Utilities.getFloatValue(debitsAsString[i]);
         }
 
         SavingsCalculator calculator = new SavingsCalculator(credits, debits);
